@@ -1,0 +1,7 @@
+[32m2026-05-06 15:56:31 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ab55d84e-668d-40e6-a309-b1131fdebdc4 - 47135 - LOGS_CAPTURED - Capturing logs for process (pid: 47135).
+[32m2026-05-06 15:56:31 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ab55d84e-668d-40e6-a309-b1131fdebdc4 - 47135 - raw_transactions - STEP_START - Started execution of step "raw_transactions".
+[32m2026-05-06 15:56:31 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ab55d84e-668d-40e6-a309-b1131fdebdc4 - 47135 - raw_transactions - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[32m2026-05-06 15:56:31 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ab55d84e-668d-40e6-a309-b1131fdebdc4 - raw_transactions - Writing file at: /Users/kis/Documents/Chenge Li/Profile/Faker/personal-bi-lab/orchestration/.tmp_dagster_home_jvp9tor6/storage/raw_transactions using PickledObjectFilesystemIOManager...
+[32m2026-05-06 15:56:31 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ab55d84e-668d-40e6-a309-b1131fdebdc4 - 47135 - raw_transactions - ASSET_MATERIALIZATION - Materialized value raw_transactions.
+[32m2026-05-06 15:56:31 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ab55d84e-668d-40e6-a309-b1131fdebdc4 - 47135 - raw_transactions - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2026-05-06 15:56:31 -0700[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ab55d84e-668d-40e6-a309-b1131fdebdc4 - 47135 - raw_transactions - STEP_SUCCESS - Finished execution of step "raw_transactions" in 54ms.

@@ -1,15 +1,16 @@
 # Personal BI & Data Engineering Lab
 
-A modern end-to-end Data Engineering and Business Intelligence ecosystem built on a local environment. This project demonstrates a production-grade data stack for personal finance and lifestyle analytics.
+A modern end-to-end Data Engineering and Business Intelligence ecosystem. This project demonstrates a production-grade data stack for personal finance and lifestyle analytics.
 
 ## 🚀 Project Overview
 This project simulates a professional data lifecycle: from synthetic data generation and orchestration to containerized storage and interactive visualization. It serves as a digital twin for personal expense monitoring.
 
-### Core Capabilities
-- **Automated Orchestration**: Managed by **Dagster**, using Software-Defined Assets (SDA) to handle data dependencies.
-- **Realistic Data Simulation**: Utilizes the **Faker** library to generate complex, real-world financial transaction patterns.
-- **Containerized Database**: A **PostgreSQL** 15 instance running on **Docker**, serving as the central data warehouse.
-- **Interactive BI**: Connected to **Tableau Public** for advanced visual analytics and lifestyle clustering.
+## 📊 Visual Analytics & Dashboard
+### [View Interactive Dashboard on Tableau Public](https://public.tableau.com/views/Alex_Financial_dashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+![Dashboard Preview](dashboard_preview.png)
+
+*The dashboard above visualizes the annual spending patterns of the synthetic user 'Alex', highlighting a major cash flow wall in September and clear lifestyle clusters in the fashion and daily retail sectors.*
 
 ## 🏗️ Technical Architecture
 The pipeline is structured as a Directed Acyclic Graph (DAG):
@@ -26,12 +27,11 @@ The pipeline is structured as a Directed Acyclic Graph (DAG):
 - **Visualization**: Tableau Public
 
 ## 🏁 Getting Started
+1. **Start the database**: `docker compose up -d`
+2. **Install dependencies**: `pip install dagster dagster-webserver pandas sqlalchemy psycopg2-binary faker`
+3. **Launch Dagster UI**: `dagster dev -f orchestration/definitions.py`
+4. Access the UI at `http://localhost:3000` and click **"Materialize All"**.
 
-### Prerequisites
-- [Docker Desktop](https://www.docker.com/)
-- Python 3.10+ (venv recommended)
-
-### Setup & Run
-1. **Start the database**:
-   ```bash
-   docker compose up -d
+## 🔮 Roadmap
+- [ ] Integration with real-time Stock Market APIs (`yfinance`).
+- [ ] Correlation analysis between Fitness (gym check-ins) and dining habits.
